@@ -325,6 +325,11 @@ a{
 }
 
 aside{
+    background-color: #e2e2e2;
+    color: red;
+}
+
+.merge2{
     color: #141a35;
     background-color: #e2e2e2;
 }
