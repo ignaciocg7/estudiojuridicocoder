@@ -118,6 +118,7 @@ a{
     transition: all 0.7s; 
 }
 
+
 .item1{
     background-image: url(./assets/penal.jpg);
     background-position: center;
@@ -369,6 +370,7 @@ ul{
 }
 
 
+
 .cuerpo{
     height: auto;
     width: 100%;
@@ -425,6 +427,7 @@ header h2{
 
 }
 
+
 .img{
     border: 2px solid #e2e2e2;
     min-height: 120px;
@@ -438,6 +441,7 @@ header h2{
      filter: grayscale(0%); 
      transition: all 0.7s; 
 }
+
 
 .img1{
     background-image: url(./assets/penal.jpg);
