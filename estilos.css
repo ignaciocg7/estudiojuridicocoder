@@ -1,15 +1,99 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+.color1 {color: #003758;}
+.color2 {color: #304a7b;}
+.color3 {color: #6d65a8;}
+.color4 {color: #c387dd;}
+.color5 {color: #ffb1ff;}
+
+.fondo-nav{
+    background-color: #c387dd;
+
 }
 
+.jumbotron{
+    background-image: url(./assets/principal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: #e2e2e2;
+    text-shadow: 1px 1px 5px ffb1ff;
+    border-radius: 0%;
+    margin-bottom: 0%;
 
+}
+.jumbotron h1{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 60px;
+}
 
+.jumbotron p{
+    font-size: 20px;
+    color: #e2e2e2;
+    padding: 30px;
+    margin-left: 60px;
+}
 
+h2{
+    text-align: center;
+    background-color: #c387dd;
+    color: #e2e2e2;
+    text-transform: capitalize;
+    padding: 20px;
+}
 
+.mision{
+    height: 500px;
+    width: 100%;
+    background-color: #6d65a8;
+    margin-bottom: 0%;
+}
 
+.row{
+    height: 500px;
+}
+.mleft{
+    background-color: #304a7b;
+    background-image: url(./assets/historia.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.mright{
+    background-color: #6d65a8;
+    padding: 20px;
+}
+
+.mright h3{
+    text-align: center;
+}
+.mright p{
+    text-align: center;
+}
+
+.footer{
+    min-height: 150px;
+    background-color: #c387dd;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer p{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.footer i{
+    font-size: 40px;
+    letter-spacing: 25px;
+}
+
+.footer a{
+    color: #304a7b;
+}
+.footer a:hover{
+    color: #404650;
+}
 /*----------------------------------------------------- APLICANDO BOOOSTRAP -----------------------------------------------------*/
 
 
@@ -28,7 +112,7 @@
 
 
 
-/* -----------------------------------------------------APLICANDO BOOSTRAP ----------------------------------------------------- */
+
 
 /* header{
     padding: 20px;
@@ -876,7 +960,7 @@ ul{
 
 
 
-footer{
+/* footer{
     min-height: 120px;
     width: 100%;
     background-color: #141a35;
@@ -906,11 +990,11 @@ footer i{
     width: 40px;
     height: 40px;
     position: fixed;
-} */
+}  */
 
 /* AREAS */
 
-.fondoarea{
+/* .fondoarea{
     background-color: black;
 }
 
@@ -944,13 +1028,13 @@ footer i{
     text-align: center;
     padding: 30px;
     color: #e2e2e2;
-}
+} */
 
 
 
 /* Equipo */
 
-.fondoequipo{
+/* .fondoequipo{
     background-color: black;
 }
 
@@ -1003,7 +1087,7 @@ footer i{
     display: block;
     line-height: 35px;
     background-color: #a5cdffa2;
-}
+} */
 
 
 /* Nosotros */
@@ -1014,7 +1098,7 @@ footer i{
     position: center
 } */
 
-.snosotros{
+/* .snosotros{
     color: #141a35;
     text-align: center;
     text-transform: uppercase;
@@ -1049,12 +1133,12 @@ footer i{
     color: #e2e2e2;
     box-shadow: 0 0 10px #f6f0ff;
     margin-left: 400px;
-}
+} */
 
 
 /* Contacto */
 
-.color1 {color: #a1caff;}
+/* .color1 {color: #a1caff;}
 .color2 {color: #f2ecff;}
 .color3 {color: #141a35;}
 .color4 {color: #76777c;}
@@ -1173,4 +1257,4 @@ body{
 .contact-info h4, .contact-info ul, .contact-info p{
     padding: 1em;
     text-align: left;
-}
+} */
