@@ -1,13 +1,29 @@
-.color1 {color: #003758;}
+/* .color1 {color: #003758;}
 .color2 {color: #304a7b;}
 .color3 {color: #6d65a8;}
 .color4 {color: #c387dd;}
-.color5 {color: #ffb1ff;}
+.color5 {color: #ffb1ff;} */
+
+header{
+    padding: 30px;
+    background-color: #003758;
+}
+header h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e2e2e2;
+    padding: 10px;
+    text-shadow: 0px 0px 3px #a1caff;
+    font-size: 30px;
+
+}
+
 
 .fondo-nav{
     background-color: #c387dd;
 
 }
+
 
 .jumbotron{
     background-image: url(./assets/principal.jpg);
@@ -33,6 +49,13 @@
     margin-left: 60px;
 }
 
+.jumbotron button{
+    margin-left: 600px;
+    background-color: #6d65a8;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
 h2{
     text-align: center;
     background-color: #c387dd;
@@ -41,34 +64,6 @@ h2{
     padding: 20px;
 }
 
-.mision{
-    height: 500px;
-    width: 100%;
-    background-color: #6d65a8;
-    margin-bottom: 0%;
-}
-
-.row{
-    height: 500px;
-}
-.mleft{
-    background-color: #304a7b;
-    background-image: url(./assets/historia.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mright{
-    background-color: #6d65a8;
-    padding: 20px;
-}
-
-.mright h3{
-    text-align: center;
-}
-.mright p{
-    text-align: center;
-}
 
 .footer{
     min-height: 150px;
@@ -79,7 +74,7 @@ h2{
 }
 
 .footer p{
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -94,6 +89,57 @@ h2{
 .footer a:hover{
     color: #404650;
 }
+
+
+/* ----------------------------------------------------- Nosotros Bootstrap----------------------------------------------------- */
+
+
+.nosotrosh2{
+    text-align: center;
+    background-color: #003758;
+    color: #e2e2e2;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.nosotros{
+    height: 500px;
+    width: 100%;
+    background-color: #6d65a8;
+    margin-bottom: 0%;
+}
+
+.row{
+    height: 500px;
+}
+.nleft{
+    background-color: #304a7b;
+    background-image: url(./assets/uba.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nright{
+    background-color: #6d65a8;
+    padding: 20px;
+}
+
+.nright h3{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #e2e2e2;
+    font-size: 40px;
+}
+.nright p{
+    text-align: center;
+}
+
+
+
+
+
+
+
 /*----------------------------------------------------- APLICANDO BOOOSTRAP -----------------------------------------------------*/
 
 
@@ -1096,9 +1142,9 @@ footer i{
     background-image: url(./assets/uba.jpg);
     height: calc(100vh - 80px);
     position: center
-} */
+} 
 
-/* .snosotros{
+.snosotros{
     color: #141a35;
     text-align: center;
     text-transform: uppercase;
