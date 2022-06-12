@@ -1,0 +1,765 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+$color1: #9dcfff;
+$color2: #e9f1ff;
+$color3: #131a35;
+$color4: #76777c;
+$color5: #e2e2e2;
+$color6: #141a35;
+$color7: #f6f0ff;
+$color8: #a5cdff62;
+$color9: #a5cdff33;
+$color10: #a5cdff00;
+
+
+
+header {
+    height: 120px;
+    width: 100%;
+    background-color: $color6;
+
+    .logo {
+        float: left;
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 15px;
+        margin-top: 15px;
+        color: $color7;
+        margin-left: 120px;
+    }
+
+    .hide {
+        font-size: 30px;
+        padding: 15px;
+        background-color: $color6;
+        color: $color5;
+        cursor: pointer;
+        display: none;
+    }
+
+    .navbar {
+        float: right;
+        text-align: center;
+        margin-top: 33px;
+        letter-spacing: 2px;
+        margin-right: 50px;
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+}
+
+main {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: $color8;
+    background-image: url(assets/principal.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .cuerpo {
+        color: $color5;
+        text-align: center;
+        text-transform: uppercase;
+        width: 70%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 30px;
+        background-color: $color9;
+        margin-top: 50px;
+        float: left;
+    }
+
+    .cuerpo h2 {
+        float: left;
+        font-size: 35px;
+        color: $color7;
+        background-color: $color10;
+    }
+
+    .cuerpo p {
+        margin-top: 100px;
+        margin-left: 250px;
+    }
+
+    .cuerpo a {
+        background-color: $color7;
+        padding: 7px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: $color6;
+        box-shadow: 0 0 10px $color7;
+        margin-left: 700px;
+    }
+
+    .cuerpo a:hover {
+        color: $color4;
+    }
+
+    .principal {
+        text-align: center;
+        background-color: $color6;
+        color: $color5;
+    }
+}
+
+footer {
+    min-height: 120px;
+    width: 100%;
+    background-color: $color6;
+    text-align: center;
+    font-size: 20px;
+    color: $color5;
+    padding: 30px;
+    position: relative;
+
+    footer p {
+        margin-bottom: 10px;
+    }
+
+    footer i {
+        color: $color1;
+        letter-spacing: 15px;
+    }
+
+    .redes {
+        font-size: 20px;
+    }
+
+    .wsp {
+        font-size: 50px;
+        color: $color5;
+        right: 10px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+    }
+}
+
+/* --------------------------AREAS----------------------------------- */
+
+section {
+
+    .subtituloarea {
+        text-align: center;
+        background-color: #a5cdff;
+        padding: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #e2e2e2;
+    }
+
+    .contenedorarea {
+        height: auto;
+        width: 100%;
+        background-color: #76777c;
+        color: #e2e2e2;
+        padding: 20px;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow: 0 0 10px #141a35;
+        grid-gap: 10px;
+    }
+
+
+
+    .img {
+        border: 2px solid #e2e2e2;
+        min-height: 120px;
+        width: 100%;
+        filter: grayscale(100%);
+        transition: all 0.7s;
+    }
+
+    .img:hover {
+        transform: scale(1.15);
+        filter: grayscale(0%);
+        transition: all 0.7s;
+    }
+
+
+    .img1 {
+        background-image: url(./assets/penal.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img2 {
+        background-image: url(./assets/laboral.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img3 {
+        background-image: url(./assets/tributarios.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img4 {
+        background-image: url(./assets/ares.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img5 {
+        background-image: url(./assets/Contratos.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img6 {
+        background-image: url(./assets/testamento.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img7 {
+        background-image: url(./assets/Divorcio.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img8 {
+        background-image: url(./assets/administrativo.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+        .contenedorarea {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .nareas {
+            display: flex;
+        }
+
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 599px) {
+        .contenedorarea {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .nareas {
+            display: flex;
+        }
+    }
+
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+    }
+
+    .img3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+    .img4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .img5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .img6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+
+    }
+
+    .img7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+
+    .img8 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+
+    @media only screen and (min-width: 600px) and (max-width:767px) {
+        .contenedorarea {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .nareas {
+            display: flex;
+        }
+
+        .img1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .img2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+        }
+
+        .img3 {
+            grid-column: 3/4;
+            grid-row: 1/2;
+
+        }
+
+        .img4 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+
+        }
+
+        .img5 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .img6 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+
+        }
+
+        .img7 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+
+        }
+
+        .img8 {
+            grid-column: 2/4;
+            grid-row: 3/4;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .contenedorarea {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .nareas {
+            display: flex;
+        }
+
+        .img1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .img2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+        }
+
+        .img3 {
+            grid-column: 3/4;
+            grid-row: 1/2;
+
+        }
+
+        .img4 {
+            grid-column: 4/5;
+            grid-row: 1/2;
+
+        }
+
+        .img5 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .img6 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+        }
+
+        .img7 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+
+        }
+
+        .img8 {
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+        .contenedorarea {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .nareas {
+            display: flex;
+        }
+
+        .img1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        .img2 {
+            grid-column: 2/4;
+            grid-row: 1/2;
+
+        }
+
+        .img3 {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        .img4 {
+            grid-column: 3/4;
+            grid-row: 3/5;
+
+        }
+
+        .img5 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+
+        }
+
+        .img6 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .img7 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+
+        }
+
+        .img8 {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .contenedorarea {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .nareas {
+            display: flex;
+        }
+
+        .img1 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .img2 {
+            grid-column: 3/6;
+            grid-row: 1/2;
+
+        }
+
+        .img3 {
+            grid-column: 3/5;
+            grid-row: 2/4;
+        }
+
+        .img4 {
+            grid-column: 5/6;
+            grid-row: 3/5;
+
+        }
+
+        .img5 {
+            grid-column: 1/3;
+            grid-row: 4/5;
+
+        }
+
+        .img6 {
+            grid-column: 5/6;
+            grid-row: 2/3;
+        }
+
+        .img7 {
+            grid-column: 1/3;
+            grid-row: 3/4;
+
+        }
+
+        .img8 {
+            grid-column: 3/5;
+            grid-row: 4/5;
+        }
+    }
+}
+
+/* Nosotros */
+
+main {
+
+    .nosotros {
+        background-image: url(./assets/uba.jpg);
+        height: 800px;
+        position: center
+    }
+
+    .snosotros {
+        color: #141a35;
+        text-align: center;
+        text-transform: uppercase;
+        width: 50%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.377);
+        margin-top: 50px;
+        float: left;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+
+    .tnosotros {
+        float: left;
+        font-size: 35px;
+        color: #e2e2e2;
+        background-color: #a5cdff00;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .pnosotros {
+        margin-top: 100px;
+        color: #e2e2e2;
+        padding: 20px;
+
+    }
+
+    .anosotros {
+        background-color: #77777c;
+        padding: 7px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #e2e2e2;
+        box-shadow: 0 0 10px #f6f0ff;
+        margin-left: 400px;
+    }
+
+}
+
+
+
+
+/* Equipo */
+
+main {
+
+    .esubtitulo {
+        text-align: center;
+        background-color: #a5cdff;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+
+    .equipo {
+        height: 500px;
+        width: 100%;
+        background-color: #76777c;
+    }
+
+    .row {
+        height: 100%;
+        width: 100%;
+    }
+
+    .eleft {
+        background-color: #77777c;
+        background-image: url(./assets/fotoequipo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .eright {
+        background-color: #e2e2e2;
+    }
+
+    .eright h3 {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .eright p {
+        text-align: center;
+    }
+
+    .card a:hover {
+        background-color: #77777c;
+    }
+
+    .card a:active {
+        background-color: #e2e2e2;
+    }
+
+
+    .card p {
+        text-align: center;
+    }
+
+    .card h4 {
+        text-align: center;
+    }
+}
+
+/* Contacto */
+
+/* .color1 {color: #a1caff;}
+.color2 {color: #f2ecff;}
+.color3 {color: #141a35;}
+.color4 {color: #76777c;}
+.color5 {color: #e2e2e2;} */
+
+body {
+    background-color: #141a35;
+}
+
+.contenido {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+    .loggo {
+        text-align: center;
+        font-size: 3em;
+        color: #a1caff;
+        margin-bottom: 30px;
+    }
+
+    .loggo span {
+        color: #e2e2e2;
+    }
+
+    .contacto-todo {
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    }
+
+    .contacto-todo>* {
+        padding: 1em;
+    }
+
+    .contact-form {
+        background-color: #76777c75;
+    }
+
+    .contact-form {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form form .block {
+        grid-column: 1 / 3;
+    }
+
+    .contact-form form p {
+        margin: 0;
+        padding: 1em;
+    }
+
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: 0;
+        background-color: none;
+        border-bottom: 1px solid #141a35;
+        outline: none;
+        color: rgb(7, 7, 7);
+    }
+
+    .contact-form form button {
+        background-color: #141a35;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+    }
+
+
+    .contact-form form button:focus {
+        background-color: #141a35;
+        color: #fff;
+        outline: 0;
+
+    }
+
+    .contact-info {
+        background-color: #a1caffc4;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+
+    .contact-form ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .contact-info ul li {
+        padding: .3em;
+    }
+
+    .contacto-todo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contacto-todo>* {
+        padding: 2em;
+
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 1em;
+        text-align: left;
+    }
+}
