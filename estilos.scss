@@ -15,6 +15,20 @@ $color8: #a5cdff62;
 $color9: #a5cdff33;
 $color10: #a5cdff00;
 
+$headings:(
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+    h5: 0.75em,
+    h6: 0.35em
+);
+
+@each $heading, $size in $headings(
+    #{$heading} {
+        font-size: $size;
+    }
+)
 
 
 header {
@@ -24,13 +38,13 @@ header {
 
     .logo {
         float: left;
-        font-size: 30px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 15px;
         margin-top: 15px;
         color: $color7;
         margin-left: 120px;
     }
+
 
     .hide {
         font-size: 30px;
@@ -526,62 +540,63 @@ section {
 
 /* Nosotros */
 
-main {
 
-    .nosotros {
-        background-image: url(./assets/uba.jpg);
-        height: 800px;
-        position: center
-    }
+.nosotros {
 
-    .snosotros {
-        color: #141a35;
-        text-align: center;
-        text-transform: uppercase;
-        width: 50%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 30px;
-        background-color: rgba(0, 0, 0, 0.377);
-        margin-top: 50px;
-        float: left;
-        margin-left: 60px;
-        margin-bottom: 30px;
-    }
+    background-image: url(./assets/uba.jpg);
+    height: 800px;
+    position: center;
+    background-size: cover;
+}
 
-    .tnosotros {
-        float: left;
-        font-size: 35px;
-        color: #e2e2e2;
-        background-color: #a5cdff00;
-        padding: 20px;
-        text-align: center;
-    }
 
-    .pnosotros {
-        margin-top: 100px;
-        color: #e2e2e2;
-        padding: 20px;
+.snosotros {
+    color: #141a35;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.377);
+    margin-top: 50px;
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
 
-    }
+.tnosotros {
+    float: left;
+    font-size: 35px;
+    color: #e2e2e2;
+    background-color: #a5cdff00;
+    padding: 20px;
+    text-align: center;
+}
 
-    .anosotros {
-        background-color: #77777c;
-        padding: 7px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        color: #e2e2e2;
-        box-shadow: 0 0 10px #f6f0ff;
-        margin-left: 400px;
-    }
+.pnosotros {
+    margin-top: 100px;
+    color: #e2e2e2;
+    padding: 20px;
 
 }
+
+.anosotros {
+    background-color: #77777c;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e2e2e2;
+    box-shadow: 0 0 10px #f6f0ff;
+    margin-left: 400px;
+}
+
 
 
 
 
 /* Equipo */
 
-main {
+section {
 
     .esubtitulo {
         text-align: center;
@@ -656,110 +671,110 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
+}
 
-    .loggo {
-        text-align: center;
-        font-size: 3em;
-        color: #a1caff;
-        margin-bottom: 30px;
-    }
+.loggo {
+    text-align: center;
+    font-size: 3em;
+    color: #a1caff;
+    margin-bottom: 30px;
+}
 
-    .loggo span {
-        color: #e2e2e2;
-    }
+.loggo span {
+    color: #e2e2e2;
+}
 
-    .contacto-todo {
-        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-    }
+.contacto-todo {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
 
-    .contacto-todo>* {
-        padding: 1em;
-    }
+.contacto-todo>* {
+    padding: 1em;
+}
 
-    .contact-form {
-        background-color: #76777c75;
-    }
+.contact-form {
+    background-color: #76777c75;
+}
 
-    .contact-form {
-        font-size: 20px;
-        text-align: center;
-    }
+.contact-form {
+    font-size: 20px;
+    text-align: center;
+}
 
-    .contact-form form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-    .contact-form form .block {
-        grid-column: 1 / 3;
-    }
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
 
-    .contact-form form p {
-        margin: 0;
-        padding: 1em;
-    }
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
 
-    .contact-form form button,
-    .contact-form form input,
-    .contact-form form textarea {
-        width: 100%;
-        padding: .7em;
-        border: 0;
-        background-color: none;
-        border-bottom: 1px solid #141a35;
-        outline: none;
-        color: rgb(7, 7, 7);
-    }
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: 0;
+    background-color: none;
+    border-bottom: 1px solid #141a35;
+    outline: none;
+    color: rgb(7, 7, 7);
+}
 
-    .contact-form form button {
-        background-color: #141a35;
-        border: 0;
-        text-transform: uppercase;
-        padding: 1em;
-    }
+.contact-form form button {
+    background-color: #141a35;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
 
 
-    .contact-form form button:focus {
-        background-color: #141a35;
-        color: #fff;
-        outline: 0;
+.contact-form form button:focus {
+    background-color: #141a35;
+    color: #fff;
+    outline: 0;
 
-    }
+}
 
-    .contact-info {
-        background-color: #a1caffc4;
-    }
+.contact-info {
+    background-color: #a1caffc4;
+}
 
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: center;
-        margin: 0 0 1rem 0;
-    }
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
 
-    .contact-form ul {
-        list-style-type: none;
-        padding: 0;
-    }
+.contact-form ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    .contact-info ul li {
-        padding: .3em;
-    }
+.contact-info ul li {
+    padding: .3em;
+}
 
-    .contacto-todo {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+.contacto-todo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
-    .contacto-todo>* {
-        padding: 2em;
+.contacto-todo>* {
+    padding: 2em;
 
-    }
+}
 
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        padding: 1em;
-        text-align: left;
-    }
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    padding: 1em;
+    text-align: left;
 }
