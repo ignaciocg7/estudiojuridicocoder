@@ -5,25 +5,21 @@
 }
 
 // Mapa de colores
-$colores:(
-    celeste: #9dcfff, 
+$colores:(celeste: #9dcfff,
     azul: #131a35,
     blanco: #e2e2e2,
     azulfrancia: #141a35,
     blancofuerte: #f6f0ff,
     celestetransparente: #a5cdff62,
     gristransparente: #a5cdff33,
-    negrotransparente: #a5cdff00
-);
+    negrotransparente: #a5cdff00,
+    negro: #000,
+    gris: #77777c,
+    rosa: rgb(200, 38, 157),
+    rojo:rgb(190, 22, 22),
+    verde: rgb(103, 202, 27),
 
-// color1: #9dcfff;  
-// coor4: #131a35;
-// color5: #e2e2e2;
-// color6: #141a35;
-// color7: #f6f0ff;
-// $color8: #a5cdff62;
-// $color9: #a5cdff33;
-// $color10: #a5cdff00
+);
 
 header {
     height: 120px;
@@ -34,6 +30,7 @@ header {
         float: left;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 15px;
+        font-size: 30px;
         margin-top: 15px;
         color: map-get($map: $colores, $key: blancofuerte);
         margin-left: 120px;
@@ -96,17 +93,17 @@ main {
     }
 
     .cuerpo a {
-        background-color: map-get($map: $colores, $key: blancofuerte);
+        background-color: map-get($map: $colores, $key: blanco);
         padding: 7px 20px;
         border-radius: 5px;
         text-decoration: none;
-        color: map-get($map: $colores, $key: azulfrancia);
+        color: map-get($map: $colores, $key: negro);
         box-shadow: 0 0 10px map-get($map: $colores, $key: blancofuerte);
         margin-left: 700px;
     }
 
     .cuerpo a:hover {
-        color: map-get($map: $colores, $key: azul);
+        color: map-get($map: $colores, $key: gris);
     }
 
     .principal {
@@ -777,51 +774,84 @@ body {
 
 
 
+.tservicio {
+
+    h1 {
+        background-color: #9dcfff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        padding: 40px;
+    }
 
 
 
-.button{
-    border: none;
-    width: 100%;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 22px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px #000;
-    margin-bottom: 2px;
-    margin-top: 1px;
 
+    .button {
+        border: none;
+        width: 100%;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 22px;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px #000;
+    }
+
+
+    @mixin servicio ($fondo, ) {
+        background-color: $fondo;
+        width: 100%;
+        height: 200px;
+        padding: 15px;
+    }
+
+    .servicio1 {
+        @include servicio(map-get($map: $colores, $key: blanco))
+    }
+
+    .servicio2 {
+        @include servicio(map-get($map: $colores, $key: rosa))
+    }
+
+    .servicio3 {
+        @include servicio(map-get($map: $colores, $key: gris))
+    }
+
+    .cservicio1 {
+        @extend .button;
+        background-color: map-get($map: $colores, $key: rojo);
+    }
+
+    .cservicio2 {
+        @extend .button;
+        background-color: map-get($map: $colores, $key: celestetransparente);
+    }
+
+    .cservicio3 {
+        @extend .button;
+        background-color: map-get($map: $colores, $key: blanco);
+    }
 }
 
-
-@mixin servicio ($fondo,){
-    background-color: $fondo;
-    width: 100%;
-    height: 200px;
-    padding: 15px;
-}
-
-.servicio1{
-    @include servicio(map-get($map: $colores, $key: celeste))
-}
-.servicio2{
-    @include servicio(map-get($map: $colores, $key: blanco))
-}
-.servicio3{
-    @include servicio(map-get($map: $colores, $key: azul))
-}
-
-.cservicio1{
-    @extend .button;
-    background-color: map-get($map: $colores, $key: azul);
-}
-
-.cservicio2{
-    @extend .button;
-    background-color: map-get($map: $colores, $key: celestetransparente);
-}
-
-.cservicio3{
-    @extend .button;
-    background-color: map-get($map: $colores, $key: blanco);
+.containerserv{
+    .button{
+        border: none;
+        width: 100%;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 22px;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px #000;
+        background-color: map-get($map: $colores, $key: verde);
+    }
+    h2{
+        padding: 40px;
+        background-color: map-get($map: $colores, $key: celeste);
+        margin-top: 2px;
+        text-align: center;
+    }
 }
